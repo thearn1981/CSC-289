@@ -44,7 +44,6 @@ def validate_environment():
     print()
     
     # The proof of completion
-    # TODO: Replace YOUR_NAME with your actual name
     print("=" * 50)
     print("Environment validated for: Teresa Hearn")
     print("=" * 50)
