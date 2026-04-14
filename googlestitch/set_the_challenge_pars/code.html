@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinetic Fairway - Set Course Pars</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-dim": "#005d22",
+                    "inverse-surface": "#0b0f0e",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#ffc5aa",
+                    "tertiary-fixed-dim": "#77a1ff",
+                    "on-tertiary": "#f0f2ff",
+                    "on-primary-fixed-variant": "#006827",
+                    "on-primary": "#cfffce",
+                    "outline-variant": "#abaeac",
+                    "inverse-on-surface": "#9b9d9c",
+                    "on-secondary-fixed": "#5c2300",
+                    "surface-tint": "#006a28",
+                    "on-primary-container": "#005d22",
+                    "background": "#f5f7f5",
+                    "surface-container": "#e6e9e7",
+                    "surface-variant": "#d9dedb",
+                    "on-background": "#2c2f2e",
+                    "on-surface-variant": "#595c5b",
+                    "on-error": "#ffefee",
+                    "on-tertiary-fixed-variant": "#003580",
+                    "secondary-fixed-dim": "#ffb28c",
+                    "inverse-primary": "#5cfd80",
+                    "on-surface": "#2c2f2e",
+                    "surface-container-high": "#e0e3e1",
+                    "on-secondary": "#fff0ea",
+                    "error-dim": "#9f0519",
+                    "tertiary": "#0055c4",
+                    "secondary-dim": "#883700",
+                    "tertiary-fixed": "#8eafff",
+                    "primary-fixed-dim": "#4bee74",
+                    "outline": "#747776",
+                    "on-tertiary-fixed": "#00163d",
+                    "error-container": "#fb5151",
+                    "on-secondary-fixed-variant": "#893700",
+                    "secondary": "#9b3f00",
+                    "surface-container-highest": "#d9dedb",
+                    "secondary-container": "#ffc5aa",
+                    "surface": "#f5f7f5",
+                    "primary-container": "#5cfd80",
+                    "surface-dim": "#d1d5d3",
+                    "on-primary-fixed": "#004819",
+                    "tertiary-container": "#8eafff",
+                    "primary-fixed": "#5cfd80",
+                    "primary": "#006a28",
+                    "on-secondary-container": "#7b3100",
+                    "on-tertiary-container": "#002d6f",
+                    "surface-container-low": "#eff1ef",
+                    "on-error-container": "#570008",
+                    "surface-bright": "#f5f7f5",
+                    "error": "#b31b25",
+                    "tertiary-dim": "#004aad"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f5f7f5] dark:bg-[#1a1c1a] flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#006a28] dark:text-[#5cfd80]" data-icon="sports_golf">sports_golf</span>
+<h1 class="text-xl font-black text-[#006a28] dark:text-[#5cfd80] tracking-tighter font-['Plus_Jakarta_Sans']">Kinetic Fairway</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#2c2f2e] dark:text-[#e6e9e7] hover:opacity-80 transition-opacity" data-icon="close">close</button>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Header Section -->
+<section class="mb-8">
+<h2 class="text-[2rem] font-bold leading-tight tracking-tight mb-2">Set Course Pars</h2>
+<p class="text-on-surface-variant body-lg">Adjust the difficulty for each hole before you tee off.</p>
+</section>
+<!-- Course Summary Bento Style -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between">
+<span class="text-label-md uppercase tracking-[0.05em] font-bold text-on-surface-variant opacity-70">Total Pars</span>
+<div class="flex items-baseline gap-2">
+<span class="text-[3.5rem] font-extrabold text-primary leading-none">54</span>
+<span class="text-on-surface-variant font-bold">STK</span>
+</div>
+</div>
+<div class="relative bg-primary-container p-6 rounded-xl overflow-hidden group">
+<div class="relative z-10">
+<span class="text-label-md uppercase tracking-[0.05em] font-bold text-on-primary-container opacity-80">Course Type</span>
+<h3 class="text-2xl font-bold text-on-primary-container">Emerald Highlands</h3>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[120px]" data-icon="landscape">landscape</span>
+</div>
+</div>
+</div>
+<!-- Holes List -->
+<div class="space-y-4">
+<!-- Hole Card Component -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex items-center justify-between shadow-[0_8px_32px_rgba(0,72,25,0.03)] transform active:scale-[0.98] transition-transform">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-surface-container-high rounded-full flex items-center justify-center font-black text-xl text-primary">
+                        1
+                    </div>
+<div>
+<h4 class="font-bold text-lg">Hole 1</h4>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">The Windmill</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container rounded-full p-1">
+<button class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center text-primary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined font-bold" data-icon="remove">remove</span>
+</button>
+<div class="w-8 text-center">
+<span class="text-2xl font-black text-on-surface">3</span>
+</div>
+<button class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary active:scale-90 transition-transform shadow-md">
+<span class="material-symbols-outlined font-bold" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Hole 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex items-center justify-between shadow-[0_8px_32px_rgba(0,72,25,0.03)]">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-surface-container-high rounded-full flex items-center justify-center font-black text-xl text-primary">
+                        2
+                    </div>
+<div>
+<h4 class="font-bold text-lg">Hole 2</h4>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Loop-de-Loop</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container rounded-full p-1">
+<button class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center text-primary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined font-bold" data-icon="remove">remove</span>
+</button>
+<div class="w-8 text-center">
+<span class="text-2xl font-black text-on-surface">4</span>
+</div>
+<button class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary active:scale-90 transition-transform shadow-md">
+<span class="material-symbols-outlined font-bold" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Hole 3 (Asymmetric Highlight) -->
+<div class="relative bg-surface-container-lowest p-5 rounded-xl flex items-center justify-between shadow-[0_8px_32px_rgba(0,72,25,0.03)] ml-4 border-l-4 border-tertiary">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-tertiary-container rounded-full flex items-center justify-center font-black text-xl text-on-tertiary-container">
+                        3
+                    </div>
+<div>
+<h4 class="font-bold text-lg">Hole 3</h4>
+<span class="text-xs font-bold uppercase tracking-widest text-tertiary">Water Hazard</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container rounded-full p-1">
+<button class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center text-primary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined font-bold" data-icon="remove">remove</span>
+</button>
+<div class="w-8 text-center">
+<span class="text-2xl font-black text-on-surface">3</span>
+</div>
+<button class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary active:scale-90 transition-transform shadow-md">
+<span class="material-symbols-outlined font-bold" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Hole 4 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex items-center justify-between shadow-[0_8px_32px_rgba(0,72,25,0.03)]">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-surface-container-high rounded-full flex items-center justify-center font-black text-xl text-primary">
+                        4
+                    </div>
+<div>
+<h4 class="font-bold text-lg">Hole 4</h4>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Sand Trap Alley</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container rounded-full p-1">
+<button class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center text-primary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined font-bold" data-icon="remove">remove</span>
+</button>
+<div class="w-8 text-center">
+<span class="text-2xl font-black text-on-surface">5</span>
+</div>
+<button class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary active:scale-90 transition-transform shadow-md">
+<span class="material-symbols-outlined font-bold" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Hole 5 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex items-center justify-between shadow-[0_8px_32px_rgba(0,72,25,0.03)] mr-4">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-surface-container-high rounded-full flex items-center justify-center font-black text-xl text-primary">
+                        5
+                    </div>
+<div>
+<h4 class="font-bold text-lg">Hole 5</h4>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">The Gator Bridge</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-surface-container rounded-full p-1">
+<button class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center text-primary active:scale-90 transition-transform shadow-sm">
+<span class="material-symbols-outlined font-bold" data-icon="remove">remove</span>
+</button>
+<div class="w-8 text-center">
+<span class="text-2xl font-black text-on-surface">3</span>
+</div>
+<button class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary active:scale-90 transition-transform shadow-md">
+<span class="material-symbols-outlined font-bold" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Visual Progress Tracker -->
+<div class="py-8">
+<div class="flex items-center justify-between mb-3 px-2">
+<span class="text-label-md font-extrabold uppercase text-on-surface-variant">Course Setup Progress</span>
+<span class="text-label-md font-extrabold text-primary">28% Complete</span>
+</div>
+<div class="h-4 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full w-[28%] bg-primary rounded-full relative">
+<div class="absolute inset-0 bg-white/20 blur-sm"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Action Area -->
+<div class="fixed bottom-0 left-0 w-full bg-white/70 backdrop-blur-xl z-50 rounded-t-[3rem] px-8 pb-10 pt-6 shadow-[0_-8px_32px_rgba(0,72,25,0.06)]">
+<div class="max-w-2xl mx-auto flex flex-col gap-4">
+<button class="w-full bg-gradient-to-r from-primary to-primary-container h-16 rounded-full flex items-center justify-center gap-3 active:scale-95 transition-transform group">
+<span class="text-on-primary text-xl font-extrabold uppercase tracking-widest">Save Course</span>
+<span class="material-symbols-outlined text-on-primary group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant opacity-60">Ready to play? All holes must have a par value.</p>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="fixed top-1/4 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="fixed bottom-1/4 -left-20 w-80 h-80 bg-tertiary/5 rounded-full blur-[120px] pointer-events-none"></div>
+</body></html>
