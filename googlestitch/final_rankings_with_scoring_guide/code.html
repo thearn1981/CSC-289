@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Putt Putt Adventures - Round Complete!</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#9b9d9c",
+                        "error": "#b31b25",
+                        "error-dim": "#9f0519",
+                        "surface-container-high": "#e0e3e1",
+                        "surface-variant": "#d9dedb",
+                        "surface-tint": "#006a28",
+                        "on-tertiary-fixed-variant": "#003580",
+                        "tertiary": "#0055c4",
+                        "on-surface": "#2c2f2e",
+                        "secondary-dim": "#883700",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#002d6f",
+                        "tertiary-container": "#8eafff",
+                        "on-error-container": "#570008",
+                        "surface-container-highest": "#d9dedb",
+                        "primary-container": "#5cfd80",
+                        "primary-dim": "#005d22",
+                        "surface": "#f5f7f5",
+                        "primary": "#006a28",
+                        "on-primary": "#cfffce",
+                        "on-primary-fixed": "#004819",
+                        "on-surface-variant": "#595c5b",
+                        "on-background": "#2c2f2e",
+                        "secondary-fixed": "#ffc5aa",
+                        "on-secondary-fixed-variant": "#893700",
+                        "primary-fixed-dim": "#4bee74",
+                        "secondary-container": "#ffc5aa",
+                        "background": "#f5f7f5",
+                        "inverse-surface": "#0b0f0e",
+                        "outline-variant": "#abaeac",
+                        "outline": "#747776",
+                        "error-container": "#fb5151",
+                        "on-tertiary-fixed": "#00163d",
+                        "tertiary-fixed": "#8eafff",
+                        "tertiary-fixed-dim": "#77a1ff",
+                        "secondary-fixed-dim": "#ffb28c",
+                        "primary-fixed": "#5cfd80",
+                        "on-error": "#ffefee",
+                        "surface-container-low": "#eff1ef",
+                        "surface-container": "#e6e9e7",
+                        "surface-dim": "#d1d5d3",
+                        "surface-bright": "#f5f7f5",
+                        "on-tertiary": "#f0f2ff",
+                        "on-secondary": "#fff0ea",
+                        "on-secondary-container": "#7b3100",
+                        "on-primary-fixed-variant": "#006827",
+                        "on-secondary-fixed": "#5c2300",
+                        "inverse-primary": "#5cfd80",
+                        "tertiary-dim": "#004aad",
+                        "secondary": "#9b3f00",
+                        "on-primary-container": "#005d22"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f5f7f5;
+            color: #2c2f2e;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .winner-gradient {
+            background: linear-gradient(15deg, #ffc5aa 0%, #ffffff 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface selection:bg-primary-container">
+<!-- TopAppBar -->
+<nav class="flex items-center justify-between w-full max-w-md mx-auto sticky top-0 z-50 bg-[#f5f7f5] dark:bg-[#1a1c1a] rounded-b-[3rem] px-6 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#006a28] dark:text-[#5cfd80]" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-2xl tracking-tight text-[#006a28] dark:text-[#5cfd80]">Round Complete!</h1>
+</div>
+<button class="material-symbols-outlined text-[#2c2f2e] dark:text-[#e6e9e7] hover:opacity-80 transition-opacity">share</button>
+</nav>
+<main class="max-w-md mx-auto px-6 pt-4 pb-32 space-y-8">
+<!-- Winner Spotlight -->
+<section class="relative">
+<div class="winner-gradient rounded-xl shadow-[0_32px_64px_-12px_rgba(155,63,0,0.12)] border border-white/50 overflow-hidden p-6">
+<!-- Abstract Course Shape Overlay -->
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="relative mb-3">
+<div class="w-24 h-24 rounded-full border-4 border-white shadow-xl overflow-hidden bg-white w-20 h-20">
+<img alt="Marcus" class="w-full h-full object-cover" data-alt="professional headshot of a smiling young man with short dark hair in a clean athletic polo shirt, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB59PUyTObV86H4PDjhRGdczDX_lCTLO0qU59bUvdPtqKPOmmVcCNd9JXl0VtrLjr0sjYzs7EOMd8DFA0f6hBoGU1800ltn0UT1bd0N_JEix4SXB4eBFpOfrCLQOztQoYSuv0YOfxjQF_aQia3ZyUv6T9IiHiwhpYeh_1Z_MuOsC33ffheqV7q-5pacKhJHmaN8bOrNp0E25VbWcxY9PVggIUvGa3vGZH9_ETu2x9--6ZPauDtrTBhX_3mAHcFxNkOhHqFMP0PQaiaL"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-secondary-fixed text-on-secondary-fixed p-2 rounded-full shadow-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+</div>
+<span class="label-md uppercase tracking-widest font-bold text-on-secondary-fixed-variant mb-1">Champion</span>
+<h2 class="font-extrabold text-on-surface mb-2 text-3xl">Marcus</h2>
+<div class="flex items-center gap-6 mt-2">
+<div class="text-left">
+<p class="text-[10px] uppercase font-bold text-outline tracking-wider">Total</p>
+<p class="font-black text-primary text-2xl">64</p>
+</div>
+<div class="h-10 w-[1px] bg-outline-variant/30"></div>
+<div class="text-left">
+<p class="text-[10px] uppercase font-bold text-outline tracking-wider">To Par</p>
+<p class="font-black text-secondary text-2xl">-8</p>
+<p class="text-[8px] font-medium text-outline/70 mt-0.5 leading-tight">Relative to par</p></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Standings -->
+<section class="space-y-4">
+<div class="flex items-center justify-between px-2">
+<h3 class="text-lg font-extrabold tracking-tight">Full Standings</h3>
+<span class="text-[10px] font-bold uppercase text-outline tracking-tighter">Par 72</span>
+</div>
+<!-- Standings List -->
+<div class="space-y-4">
+<!-- TIE: 2nd Place Sarah -->
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg shadow-[0_4px_12px_rgba(0,72,25,0.04)] transform transition-transform hover:scale-[1.02]">
+<div class="flex flex-col items-center justify-center w-10">
+<span class="text-sm font-black text-primary italic">2ND</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary overflow-hidden flex-shrink-0">
+<img alt="Sarah" class="w-full h-full object-cover" data-alt="portrait of a confident woman with long brown hair, wearing a white sports visor, bright sunny day" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATsn_EP97p7IG1fG-8tQV9UC8rKlFNFH6QuUqostJOe4qxnxPvRrTxvQoM0Iw3wcewD889WB9T8Hcb4405PfJBgFoudcYMdH66rFFhzMdoCux3ExP9xM8gEdDMVEyAby7WB8ly-ua2MwTM1DsbIg3idP1xJXq08PKyC5gKYqoOJFwz4nbp0lcgEJg5TEiJEjIazwHXV1HfdejIE83Ij41wnEMgRa1cjmUGn0TZk0fX3hK41afJVzzk3sveYT-R8MDnQAdx3X7V396O"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-on-surface">Sarah</h4>
+<p class="text-[10px] font-semibold text-outline">68 Strokes</p>
+</div>
+<div class="text-right">
+<span class="text-xl font-black text-on-surface">-4</span>
+</div>
+</div>
+<!-- TIE: 2nd Place Dave (Visual link to Sarah) -->
+<div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-lg shadow-[0_4px_12px_rgba(0,72,25,0.04)] transform transition-transform hover:scale-[1.02]">
+<div class="flex flex-col items-center justify-center w-10">
+<span class="text-sm font-black text-primary italic">2ND</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-tertiary overflow-hidden flex-shrink-0">
+<img alt="Dave" class="w-full h-full object-cover" data-alt="middle aged man with a friendly smile, outdoor golf course background, natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3V6v7g_aOuVD6giB4N-Gqca8eKkBnaVox20anlQFwfwEfA_pZ3LuXo1-D2gnLvSWWFdQzUMpgoJk9JS7MVvjA1F8qZUSGMD0VCYPZGwPH_FNUU4OElr_GDqphQ9BjNtkZDP1zsjtejRpgvzQnw4SrFQqWwG4ajTzviPcltCGzaUfiO3QFnIUUGKdj0qhxSapX7htKWEsUBJLNHybGF8VBKzt5Kre8CkdkXz8zmsWkFoFsmJxpR1fIKUeeiCCHlpJ_X2mKh53ePlnj"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-on-surface">Dave</h4>
+<p class="text-[10px] font-semibold text-outline">68 Strokes</p>
+</div>
+<div class="text-right">
+<span class="text-xl font-black text-on-surface">-4</span>
+</div>
+</div>
+<!-- 4th Place John Doe -->
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-lg opacity-90">
+<div class="flex flex-col items-center justify-center w-10">
+<span class="text-sm font-bold text-outline-variant">4TH</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-outline font-bold">JD</div>
+<div class="flex-grow">
+<h4 class="font-semibold text-on-surface-variant">John Doe</h4>
+<p class="text-[10px] font-semibold text-outline">72 Strokes</p>
+</div>
+<div class="text-right">
+<span class="text-lg font-bold text-on-surface-variant">E</span>
+</div>
+</div>
+<!-- 5th Place Emily M. -->
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-lg opacity-90">
+<div class="flex flex-col items-center justify-center w-10">
+<span class="text-sm font-bold text-outline-variant">5TH</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-variant overflow-hidden">
+<img alt="Emily" class="w-full h-full object-cover" data-alt="portrait of a young woman with curly hair looking directly at camera, soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbYJXhPW_lllT4PJAafVpp009gaEUKqdBhpAOoQE4ELHYaE_Ker-H-0SNggXAb5pRl9BR-gF3vnPvIz0oPAhfxIye5Mgty0iQ1rgPTGg6T88Hoy2MtxDWUvHGh9sIAt9LP9B-uTWqTwqb3was5tmNK0zdUOsWXcZVvCoHlrBFOnllMjKcVf8S5YoI0GDAyjnP1sbig0wBSWPdHY7xA5RRDrXJFwkCQ2DL46v4uTm30_59GG_o5S70kFn6ioYYKF7ihPnyFqiyFDRmw"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-semibold text-on-surface-variant">Emily M.</h4>
+<p class="text-[10px] font-semibold text-outline">75 Strokes</p>
+</div>
+<div class="text-right">
+<span class="text-lg font-bold text-error">+3</span>
+</div>
+</div>
+<!-- 6th Place Ben K. -->
+<div class="flex items-center gap-4 bg-surface-container-low p-4 rounded-lg opacity-90">
+<div class="flex flex-col items-center justify-center w-10">
+<span class="text-sm font-bold text-outline-variant">6TH</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-variant overflow-hidden">
+<img alt="Ben" class="w-full h-full object-cover" data-alt="man with beard wearing a casual cap, outdoor park lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBppuoEUv5bKXZH6W-BOkl6j_iF1_3mFvVnVY-T2doHFr4GFNgtK6gYz_VHD2vvs9GxnS5b2sB0biakYLvB0vVAjG1kocyzHGwNbysXNW51HoyVYPczNR8wwE6iWBSGec0acHBwk2qKtsEvU4yQqk72Vgl_8Vv27C7qkervkzf326iF7fhyQlg4vf3SkrXDKYuwwKk4gZtAAasDw8iCBkdBknlxRrjs7-DSsUv3F3byOzNQ7HNOuO8VzN7ju_dE0dKn6uM5ROG_sOHn"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-semibold text-on-surface-variant">Ben K.</h4>
+<p class="text-[10px] font-semibold text-outline">81 Strokes</p>
+</div>
+<div class="text-right">
+<span class="text-lg font-bold text-error">+9</span>
+</div>
+</div>
+</div>
+</section><!-- Scoring Legend -->
+<div class="px-2 py-3 flex items-center justify-center gap-6 border-y border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-secondary-container/30 text-secondary text-[10px] font-black">-</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Under Par (Great!)</span>
+</div>
+<div class="h-3 w-[1px] bg-outline-variant/30"></div>
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-5 h-5 rounded-full bg-error-container/20 text-error text-[10px] font-black">+</span>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Over Par</span>
+</div>
+</div>
+<!-- Final Fun Stat Card -->
+<div class="glass-card rounded-lg p-6 flex items-center justify-between border border-white/40">
+<div class="space-y-1">
+<h5 class="text-xs font-black uppercase text-tertiary tracking-widest">Course Legend</h5>
+<p class="text-on-surface font-bold">Hole 14 "The Kraken"</p>
+<p class="text-[10px] text-outline">Most difficult hole this round</p>
+</div>
+<div class="text-tertiary">
+<span class="material-symbols-outlined text-4xl">water_damage</span>
+</div>
+</div>
+</main>
+<!-- Bottom Action Area (The "New Game" Anchor) -->
+<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 bg-white/70 dark:bg-black/70 backdrop-blur-xl rounded-t-[3rem] z-50 shadow-[0_-8px_32px_rgba(0,72,25,0.06)]">
+<!-- Courses Tab -->
+<div class="flex flex-col items-center justify-center text-[#2c2f2e] dark:text-[#e6e9e7] opacity-60 hover:scale-105 transition-transform active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-['Plus_Jakarta_Sans'] font-semibold text-[10px] uppercase tracking-widest mt-1">Courses</span>
+</div>
+<!-- New Game Tab (ACTIVE) -->
+<div class="flex flex-col items-center justify-center bg-[#5cfd80] dark:bg-[#006a28] text-[#006a28] dark:text-[#5cfd80] rounded-full px-6 py-2 transition-all scale-110 active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+<span class="font-['Plus_Jakarta_Sans'] font-semibold text-[10px] uppercase tracking-widest mt-1">New Game</span>
+</div>
+<!-- Profile Tab -->
+<div class="flex flex-col items-center justify-center text-[#2c2f2e] dark:text-[#e6e9e7] opacity-60 hover:scale-105 transition-transform active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] font-semibold text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</div>
+</div>
+</body></html>

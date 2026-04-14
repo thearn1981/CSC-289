@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Putt Putt Adventures - Pro Tips</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#8eafff",
+                    "on-tertiary-container": "#002d6f",
+                    "secondary-dim": "#883700",
+                    "primary-dim": "#005d22",
+                    "on-tertiary": "#f0f2ff",
+                    "on-primary-container": "#005d22",
+                    "surface-dim": "#d1d5d3",
+                    "secondary-fixed-dim": "#ffb28c",
+                    "primary-container": "#5cfd80",
+                    "on-secondary-container": "#7b3100",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffefee",
+                    "on-surface-variant": "#595c5b",
+                    "secondary-container": "#ffc5aa",
+                    "on-tertiary-fixed-variant": "#003580",
+                    "outline": "#747776",
+                    "inverse-primary": "#5cfd80",
+                    "secondary": "#9b3f00",
+                    "on-secondary-fixed": "#5c2300",
+                    "on-primary": "#cfffce",
+                    "surface-tint": "#006a28",
+                    "inverse-on-surface": "#9b9d9c",
+                    "primary": "#006a28",
+                    "on-background": "#2c2f2e",
+                    "tertiary-dim": "#004aad",
+                    "surface-container-high": "#e0e3e1",
+                    "surface-container-highest": "#d9dedb",
+                    "error-container": "#fb5151",
+                    "background": "#f5f7f5",
+                    "on-surface": "#2c2f2e",
+                    "outline-variant": "#abaeac",
+                    "on-primary-fixed-variant": "#006827",
+                    "surface-container": "#e6e9e7",
+                    "tertiary-fixed-dim": "#77a1ff",
+                    "on-primary-fixed": "#004819",
+                    "surface-variant": "#d9dedb",
+                    "primary-fixed-dim": "#4bee74",
+                    "on-secondary": "#fff0ea",
+                    "on-tertiary-fixed": "#00163d",
+                    "inverse-surface": "#0b0f0e",
+                    "secondary-fixed": "#ffc5aa",
+                    "error": "#b31b25",
+                    "tertiary": "#0055c4",
+                    "surface-container-low": "#eff1ef",
+                    "primary-fixed": "#5cfd80",
+                    "error-dim": "#9f0519",
+                    "on-secondary-fixed-variant": "#893700",
+                    "tertiary-container": "#8eafff",
+                    "surface-bright": "#f5f7f5",
+                    "on-error-container": "#570008",
+                    "surface": "#f5f7f5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="flex items-center justify-between px-6 py-3 w-full sticky top-0 z-50 bg-[#f5f7f5] dark:bg-[#1a1c1a]">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 transition-transform p-2 rounded-full hover:bg-[#006a28]/5">
+<span class="material-symbols-outlined text-[#006a28] dark:text-[#5cfd80]" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-xl tracking-tight text-[#006a28] dark:text-[#5cfd80]">Pro Tips</h1>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-xl" data-icon="school" data-weight="fill" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+</header>
+<main class="px-5 pt-2 space-y-4 max-w-2xl mx-auto">
+<!-- Hero Tip: The Golden Rule -->
+<section class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary to-primary-dim p-5 text-on-primary shadow-lg">
+<div class="relative z-10">
+<span class="text-[10px] uppercase tracking-[0.1em] text-primary-container font-bold opacity-90 block mb-1">The Golden Rule</span>
+<h2 class="text-xl font-extrabold mb-2 leading-tight">Keep your head down and follow through!</h2>
+<p class="text-on-primary opacity-80 text-sm max-w-[85%]">Focus on the ball until the putter makes contact. Smooth motion wins the game.</p>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-15">
+<span class="material-symbols-outlined text-[6rem]" data-icon="sports_golf">sports_golf</span>
+</div>
+</section>
+<!-- The Honor Rule (Asymmetric Bento Style) -->
+<section class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg" data-icon="workspace_premium">workspace_premium</span>
+<h3 class="text-sm font-bold uppercase tracking-wide">The Honor Rule</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<div class="bg-surface-container-lowest rounded-lg p-4 shadow-sm flex flex-col justify-between border-l-4 border-secondary">
+<div>
+<h4 class="text-lg font-black text-on-surface mb-1">Putt Order</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">The player with the <span class="font-bold text-secondary">lowest score</span> on the previous hole gets the "Honor" to tee off first.</p>
+</div>
+<div class="mt-2 flex justify-end">
+<span class="material-symbols-outlined text-3xl text-secondary-container" data-icon="crown" data-weight="fill" style="font-variation-settings: 'FILL' 1;">crown</span>
+</div>
+</div>
+<div class="bg-tertiary-container/20 rounded-lg p-4 border-dashed border-2 border-tertiary/20 flex flex-col items-center justify-center text-center">
+<div class="w-10 h-10 bg-tertiary-container rounded-full flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-on-tertiary-container text-xl" data-icon="military_tech">military_tech</span>
+</div>
+<p class="text-[11px] font-semibold text-on-tertiary-container">Pro Tip: Always stay quiet and still while others are taking their shot!</p>
+</div>
+</div>
+</section>
+<!-- Understanding Par (Glassmorphism & Tonal Layers) -->
+<section class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="calculate">calculate</span>
+<h3 class="text-sm font-bold uppercase tracking-wide">Decoding the Score</h3>
+</div>
+<div class="bg-surface-container rounded-xl p-4 space-y-4">
+<div class="flex flex-row items-center justify-between gap-4">
+<div class="flex-1">
+<h4 class="text-xl font-black text-primary mb-1">What is 'Par'?</h4>
+<p class="text-xs text-on-surface-variant">Target number of strokes to finish. Aim to match or beat it!</p>
+</div>
+<div class="bg-surface-container-lowest px-4 py-2 rounded-full shadow-inner border border-outline-variant/10 shrink-0">
+<span class="text-lg font-black tracking-tighter text-on-surface">PAR 3</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<!-- Under Par -->
+<div class="glass-card rounded-lg p-3 flex items-center gap-3 group hover:scale-[1.01] transition-transform">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center shrink-0">
+<span class="text-lg font-black text-on-primary-container">-1</span>
+</div>
+<div>
+<h5 class="font-bold text-primary text-xs">Under Par (-)</h5>
+<p class="text-[10px] text-on-surface-variant leading-tight">Fewer shots than par. Awesome!</p>
+</div>
+</div>
+<!-- Over Par -->
+<div class="glass-card rounded-lg p-3 flex items-center gap-3 group hover:scale-[1.01] transition-transform">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center shrink-0">
+<span class="text-lg font-black text-on-secondary-container">+1</span>
+</div>
+<div>
+<h5 class="font-bold text-secondary text-xs">Over Par (+)</h5>
+<p class="text-[10px] text-on-surface-variant leading-tight">More shots than par. Keep practicing!</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Illustrative Tip Card -->
+<section class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-md">
+<div class="h-32 w-full relative">
+<img alt="Mini golf course detail" class="w-full h-full object-cover" data-alt="Close-up of a vibrant green mini golf course with a colorful orange golf ball near a creative metal obstacle at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA2LU52U8Kzpk5eQiPKyW-EHGwPE_nkZpjUODJIkhxh0qG9c3D_0jlRKplyYZC4V_osrBLHmZYGRxOCoUaISOcphU_DDYAbkWlnc5Y-l4n29Znm9aWTn8YevI3KHbdYwYJKbHiJ3PtU8tKMA5jFDqHb7AuODFL8n28ORLHbOZ_fFUhwF_WGJeAE2OID-1pzahBQpBnc3A53cD88c7rpogsvHuxhtblXNiS-7_toDsoXGt2R5HJ5vd5S3q7DS61A-pyIv48b2nRZAV3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+<span class="text-white font-bold text-sm">Master the bank shot!</span>
+</div>
+</div>
+<div class="p-4">
+<p class="text-[11px] text-on-surface-variant leading-relaxed">Sometimes the direct path is blocked. Look for the colorful bumpers to bounce your ball into position. Think like a pool player!</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 dark:bg-[#1a1c1a]/80 backdrop-blur-xl shadow-[0_-8px_32px_rgba(0,72,25,0.06)] border-t border-[#006a28]/5">
+<a class="flex flex-col items-center justify-center text-[#2c2f2e] dark:text-[#e2e3e1] px-4 py-1 opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="sports_golf">sports_golf</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[9px] uppercase tracking-[0.05em]">Play</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2c2f2e] dark:text-[#e2e3e1] px-4 py-1 opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="map">map</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[9px] uppercase tracking-[0.05em]">Course</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#5cfd80] dark:bg-[#006a28] text-[#006a28] dark:text-[#5cfd80] rounded-full px-5 py-1 scale-105 transition-transform active:scale-95 duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[9px] uppercase tracking-[0.05em]">Tips</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2c2f2e] dark:text-[#e2e3e1] px-4 py-1 opacity-60 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="leaderboard">leaderboard</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[9px] uppercase tracking-[0.05em]">Stats</span>
+</a>
+</nav>
+</body></html>

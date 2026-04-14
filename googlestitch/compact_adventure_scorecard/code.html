@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#7b3100",
+                    "on-primary-fixed-variant": "#006827",
+                    "tertiary-dim": "#004aad",
+                    "secondary": "#9b3f00",
+                    "on-primary-container": "#005d22",
+                    "on-secondary-fixed": "#5c2300",
+                    "inverse-primary": "#5cfd80",
+                    "surface-container-low": "#eff1ef",
+                    "surface-container": "#e6e9e7",
+                    "on-tertiary": "#f0f2ff",
+                    "on-secondary": "#fff0ea",
+                    "surface-dim": "#d1d5d3",
+                    "surface-bright": "#f5f7f5",
+                    "primary-fixed": "#5cfd80",
+                    "on-error": "#ffefee",
+                    "tertiary-fixed-dim": "#77a1ff",
+                    "secondary-fixed-dim": "#ffb28c",
+                    "outline": "#747776",
+                    "error-container": "#fb5151",
+                    "on-tertiary-fixed": "#00163d",
+                    "tertiary-fixed": "#8eafff",
+                    "secondary-container": "#ffc5aa",
+                    "background": "#f5f7f5",
+                    "inverse-surface": "#0b0f0e",
+                    "primary-fixed-dim": "#4bee74",
+                    "outline-variant": "#abaeac",
+                    "on-secondary-fixed-variant": "#893700",
+                    "secondary-fixed": "#ffc5aa",
+                    "on-surface-variant": "#595c5b",
+                    "on-background": "#2c2f2e",
+                    "on-primary-fixed": "#004819",
+                    "surface": "#f5f7f5",
+                    "primary": "#006a28",
+                    "on-primary": "#cfffce",
+                    "on-error-container": "#570008",
+                    "surface-container-highest": "#d9dedb",
+                    "primary-container": "#5cfd80",
+                    "primary-dim": "#005d22",
+                    "on-tertiary-container": "#002d6f",
+                    "tertiary-container": "#8eafff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#2c2f2e",
+                    "secondary-dim": "#883700",
+                    "surface-variant": "#d9dedb",
+                    "surface-tint": "#006a28",
+                    "surface-container-high": "#e0e3e1",
+                    "tertiary": "#0055c4",
+                    "on-tertiary-fixed-variant": "#003580",
+                    "error": "#b31b25",
+                    "error-dim": "#9f0519",
+                    "inverse-on-surface": "#9b9d9c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+        body {
+            min-height: 100dvh;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-emerald-950 text-primary dark:text-primary-fixed docked full-width top-0 rounded-b-xl sticky z-40">
+<div class="flex justify-between items-center w-full px-6 py-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xl" data-icon="golf_course">golf_course</span>
+<span class="text-lg font-extrabold tracking-tighter">The Kinetic Fairway</span>
+</div>
+<div class="bg-surface-container dark:bg-emerald-900/30 px-3 py-1 rounded-full">
+<span class="font-bold text-sm tracking-tight">Hole 14</span>
+</div>
+</div>
+</header>
+<main class="max-w-md mx-auto px-4 pt-4 space-y-4">
+<!-- Hero Section: Compacted -->
+<section class="relative overflow-hidden bg-primary-container/20 rounded-xl p-3 flex flex-col items-center text-center">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-32 h-32 bg-tertiary/10 rounded-full blur-3xl"></div>
+<span class="text-[10px] uppercase tracking-widest text-primary font-black mb-1">Current Challenge</span>
+<h1 class="text-xl font-extrabold tracking-tight text-on-surface mb-3">Dragon's Breath</h1>
+<!-- Compact Par Badge -->
+<div class="inline-flex items-center justify-center bg-primary p-0.5 rounded-full shadow-md">
+<div class="bg-on-primary text-primary font-black text-sm w-8 h-8 rounded-full flex items-center justify-center">
+                3
+            </div>
+<span class="text-on-primary px-3 font-bold text-xs uppercase tracking-wider">Par</span>
+</div>
+</section>
+<!-- Progress Track: Slimmed -->
+<section class="space-y-1.5">
+<div class="flex justify-between items-end px-1">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Course Progress</span>
+<span class="text-[10px] font-bold text-primary">14 / 18</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full relative" style="width: 77%;"></div>
+</div>
+</section>
+<!-- Player Cards: High-Density Horizontal Rows -->
+<section class="space-y-2">
+<!-- Player Row 1 -->
+<div class="bg-surface-container-lowest rounded-full py-2 px-3 flex items-center gap-3 shadow-sm border border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex-shrink-0 flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">person_play</span>
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="font-extrabold text-sm text-on-surface truncate">Ace</h3>
+<p class="text-[10px] font-bold opacity-60 uppercase tracking-tight">Total: 42</p>
+</div>
+<!-- Horizontal Controls -->
+<div class="flex items-center bg-surface-container rounded-full p-0.5 gap-1">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="remove">remove</span>
+</button>
+<span class="w-6 text-center text-lg font-black text-on-surface">3</span>
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Player Row 2 -->
+<div class="bg-surface-container-lowest rounded-full py-2 px-3 flex items-center gap-3 shadow-sm border border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-tertiary-container flex-shrink-0 flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">sports_handball</span>
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="font-extrabold text-sm text-on-surface truncate">Dude</h3>
+<p class="text-[10px] font-bold opacity-60 uppercase tracking-tight">Total: 45</p>
+</div>
+<div class="flex items-center bg-surface-container rounded-full p-0.5 gap-1">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="remove">remove</span>
+</button>
+<span class="w-6 text-center text-lg font-black text-on-surface">4</span>
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Player Row 3 -->
+<div class="bg-surface-container-lowest rounded-full py-2 px-3 flex items-center gap-3 shadow-sm border border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-primary-container flex-shrink-0 flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="font-extrabold text-sm text-on-surface truncate">Sunny</h3>
+<p class="text-[10px] font-bold opacity-60 uppercase tracking-tight">Total: 39</p>
+</div>
+<div class="flex items-center bg-surface-container rounded-full p-0.5 gap-1">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="remove">remove</span>
+</button>
+<span class="w-6 text-center text-lg font-black text-on-surface">2</span>
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Player Row 4 (New for 6 player capacity test) -->
+<div class="bg-surface-container-lowest rounded-full py-2 px-3 flex items-center gap-3 shadow-sm border border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-error-container/20 flex-shrink-0 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">pets</span>
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="font-extrabold text-sm text-on-surface truncate">Spike</h3>
+<p class="text-[10px] font-bold opacity-60 uppercase tracking-tight">Total: 48</p>
+</div>
+<div class="flex items-center bg-surface-container rounded-full p-0.5 gap-1">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="remove">remove</span>
+</button>
+<span class="w-6 text-center text-lg font-black text-on-surface">5</span>
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Player Row 5 -->
+<div class="bg-surface-container-lowest rounded-full py-2 px-3 flex items-center gap-3 shadow-sm border border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-secondary-container/30 flex-shrink-0 flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">cruelty_free</span>
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="font-extrabold text-sm text-on-surface truncate">Luna</h3>
+<p class="text-[10px] font-bold opacity-60 uppercase tracking-tight">Total: 41</p>
+</div>
+<div class="flex items-center bg-surface-container rounded-full p-0.5 gap-1">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="remove">remove</span>
+</button>
+<span class="w-6 text-center text-lg font-black text-on-surface">3</span>
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Player Row 6 -->
+<div class="bg-surface-container-lowest rounded-full py-2 px-3 flex items-center gap-3 shadow-sm border border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/30 flex-shrink-0 flex items-center justify-center text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">extension</span>
+</div>
+<div class="flex-grow min-w-0">
+<h3 class="font-extrabold text-sm text-on-surface truncate">Brick</h3>
+<p class="text-[10px] font-bold opacity-60 uppercase tracking-tight">Total: 52</p>
+</div>
+<div class="flex items-center bg-surface-container rounded-full p-0.5 gap-1">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-error active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="remove">remove</span>
+</button>
+<span class="w-6 text-center text-lg font-black text-on-surface">6</span>
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary active:scale-90 transition-all">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</section>
+<!-- CTA Action: Compacted -->
+<div class="pb-16 pt-2">
+<button class="w-full bg-gradient-to-br from-[#006a28] to-[#5cfd80] text-white py-4 rounded-full font-black text-lg shadow-lg flex items-center justify-center gap-3 active:scale-95 transition-all">
+            NEXT HOLE
+            <span class="material-symbols-outlined font-bold text-xl" data-icon="arrow_forward_ios">arrow_forward_ios</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 py-2 bg-white/80 dark:bg-emerald-950/80 backdrop-blur-md rounded-t-xl shadow-[0_-4px_24px_rgba(0,0,0,0.05)]">
+<!-- Map Tab -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 p-2 hover:opacity-100 transition-all" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="map">map</span>
+<span class="text-[9px] font-bold uppercase tracking-tight">Map</span>
+</a>
+<!-- Scorecard Tab (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full p-3 -mt-6 shadow-lg border-4 border-surface active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="edit_note">edit_note</span>
+<span class="text-[9px] font-bold uppercase tracking-tight">Scores</span>
+</a>
+<!-- Rank Tab -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60 p-2 hover:opacity-100 transition-all" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="leaderboard">leaderboard</span>
+<span class="text-[9px] font-bold uppercase tracking-tight">Rank</span>
+</a>
+</nav>
+</body></html>
